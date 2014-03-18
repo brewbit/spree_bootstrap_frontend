@@ -9,9 +9,9 @@
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
 
-    <%= render :partial => 'spree/shared/header' %>
-
-    <div class="container">
+    <div id="page-container" class="container">
+    
+      <%= render :partial => 'spree/shared/header' %>
 
       <div class="row" data-hook>
 
@@ -28,9 +28,9 @@
 
       </div>
 
-    </div>
+      <%= render :partial => 'spree/shared/footer' %>
 
-    <%= render :partial => 'spree/shared/footer' %>
+    </div>
 
     <%= render :partial => 'spree/shared/google_analytics' %>
     <script>
