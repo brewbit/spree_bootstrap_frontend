@@ -1,6 +1,6 @@
 <% if spree_current_user %>
   <li class="dropdown" id="accountmenu">
-  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account<b class="caret"></b></a>
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= spree_current_user.email %><b class="caret"></b></a>
   <ul class="dropdown-menu">
     <li><%= link_to Spree.t(:dashboard), '/dashboard' %></li>
     <li><%= link_to Spree.t(:my_account), spree.account_path %></li>
