@@ -3,7 +3,8 @@
   <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= spree_current_user.email %><b class="caret"></b></a>
   <ul class="dropdown-menu">
     <li><%= link_to Spree.t(:dashboard), '/dashboard' %></li>
-    <li><%= link_to Spree.t(:my_account), spree.account_path %></li>
+    <li><%= link_to Spree.t(:dynamic_setpoints), '/dashboard/dynamic_setpoints' %></li>
+    <li><%= link_to 'Account Settings', spree.account_path %></li>
     <li class="divider"></li>
     <li><%= link_to Spree.t(:logout), spree.logout_path %></li>
   </ul>
