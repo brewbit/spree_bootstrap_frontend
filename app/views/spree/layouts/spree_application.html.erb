@@ -21,7 +21,7 @@
 
         <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
           <%= flash_messages %>
-          <%= yield %>
+          <%= content_for?(:app_content) ? yield(:app_content) : yield %>
         </div>
 
         <%= yield :templates %>
