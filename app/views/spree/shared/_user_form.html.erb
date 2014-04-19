@@ -3,7 +3,7 @@
     <%= f.label :email %>
     <%= f.email_field :email, :class => 'form-control', :placeholder => Spree.t(:email) %>
   </div>
-  <% unless action_name == "new" -%>
+  <% unless action_name == "new" || action_name == "create" -%>
     <div class='form-group'>
       <%= f.label :temperature_scale %>
       <%= f.select :temperature_scale, ['C', 'F'], {}, { :class => 'form-control' } %>
